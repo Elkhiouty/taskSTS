@@ -1,0 +1,98 @@
+.container{
+    width: 100%;
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+    background-color: #0062cc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 500px;
+    /* margin: -8px; */
+  }
+  .title{
+    flex: 0.2;
+    margin-left: 1%;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  .nav-items{
+    display: flex;
+    flex: 0.7;
+    align-items: center;
+    justify-content: start;
+    list-style-type: none;
+  }
+  .nav-item{
+    margin: 20px;
+    padding: 10px;
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+  }
+  .nav-item:hover{
+    color:#313233;
+      text-decoration:none;
+      cursor:pointer;
+  }
+  .navbar-toggler{
+    display: none;
+    font-size: medium;
+  }
+  
+  @media (max-width: 1000px) {
+    .navbar-toggler {
+      width: fit-content;
+      display: inline;
+      /* order: 1; */
+      margin: 10px;
+    }
+  
+    ul {
+      position: fixed;
+      top: 50px;
+      right: -150%;
+      width: 100%;
+      background-color: #ffffff;
+      height: fit-content ;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: all 0.3s;
+      border: 2px solid gray;
+    }
+  
+    ul li {
+      width: 100%;
+      padding: 20px 0;
+      border-bottom: 1px solid gray;
+    }
+  
+    .navbar-toggler:focus ~ ul {
+      right: 0;
+    }
+    .navbar-toggler:active ~ ul {
+      right: 0;
+    }
+    .navbar-toggler:visited ~ul {
+      right: 0;
+    }
+    .navbar{
+      justify-content: start;
+    }
+    .title {
+      margin: 10px;
+      flex: none;
+      /* font-size: larger; */
+    }
+    .nav-item{
+      color: black;
+    }
+  }
+  

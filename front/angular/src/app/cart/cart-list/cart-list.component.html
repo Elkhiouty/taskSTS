@@ -1,0 +1,46 @@
+<div class="card">
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Title</th>
+      <th>Price</th>
+      <th>Count</th>
+      <th>Total</th>
+      <th>Control</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products,index as i">
+      <td>
+        {{i+1}}
+      </td>
+      <td>
+        {{product.product.title}}
+      </td>
+      <td>
+        {{product.product.price}} $
+      </td>
+      <td>
+        <button class="btn" (click)="inc(product.product)">+</button>
+        <span class="count">{{product.product.count}}</span>
+        <button class="btn" (click)="dec(i)">-</button>
+      </td>
+      <td>
+        {{product.total}} $
+      </td>
+      <td>
+        <button class="btn-red" (click)="remove(i)">Remove</button>
+      </td>
+    </tr>
+    <tr style="color: white; background-color: gray; position: sticky;">
+      <td><B>Sum</B></td>
+      <td>-</td>
+      <td>-</td>
+      <td><B>{{c}}</B></td>
+      <td><B>{{t.toFixed(2)}} $</B></td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+</div>

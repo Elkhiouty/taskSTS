@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="navbar">
+    <h1 class="title"><a routerLink="/">E-Commerce</a></h1>
+    <button class="navbar-toggler" type="button">
+      &dArr;
+    </button>
+    <ul class=" nav-items">
+      <li>
+        <a class="nav-item" routerLink="/"> Home </a>
+      </li>
+      <li>
+        <a class="nav-item" routerLink="/products"> Products </a>
+      </li>
+      <li>
+        <a class="nav-item" id="cart" routerLink="/cart">{{'Cart ('+ count +')'}}</a>
+      </li>
+    </ul>
+  </div>
+      <div class="main">
+        <router-outlet></router-outlet>
+    </div>
+</div>

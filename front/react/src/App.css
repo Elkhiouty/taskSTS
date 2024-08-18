@@ -1,0 +1,8 @@
+.main{
+    padding-top: 100px;
+}
+.mainCart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
