@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qVqce4VT6dSRBZLrmeOWu7De+Mp23lbzkPmvkzfAEjM=",
+  "Source": "taskSTS",
+  "BasePath": "_content/taskSTS",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
